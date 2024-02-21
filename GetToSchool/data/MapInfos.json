@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":1081.3333333333333,"scrollY":604.6666666666666},
+{"id":2,"expanded":true,"name":"oHouse","order":2,"parentId":0,"scrollX":3538.909090909091,"scrollY":2013.818181818182,"quick":false},
+{"id":3,"expanded":true,"name":"iHouse","order":3,"parentId":0,"scrollX":1946.3999999999999,"scrollY":1107.6,"quick":false},
+{"id":4,"expanded":true,"name":"BPass","order":4,"parentId":0,"scrollX":2433,"scrollY":1384.5,"quick":false},
+{"id":5,"expanded":false,"name":"BPDungeon","order":5,"parentId":4,"scrollX":2456.727272727273,"scrollY":2779.090909090909,"quick":false},
+{"id":6,"expanded":false,"name":"FPass","order":6,"parentId":0,"scrollX":1216.5,"scrollY":867.75,"quick":false}
+]
