@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryson's Website</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" medIA="none" href="css/dark.css">
+</head>
+<body>
+   <div id="content">
+        <div id="banner">
+            <h1>Game Guide!</h1>
+            <a href="index.html">Main Site</a> |
+            <a href="about.html">About Me</a> |
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+    </div>
+    <div id="blogposts">
+        <div class="post">
+            <h2>Play My Game</h2>
+            <p>Hey there! Before you try out my game there's a few things you should know. This game took me almost 2 months to make what I currently have 
+                you can take a look at some of the areas I've made below, or try and find the areas yourself! Enjoy my game!
+            </p>
+            <p>Click <a href=https://brysonh27.github.io/GetToSchool/index.html>here</a> to play.</p>
+         </div>
+         <div class="post">
+            <h2>Gallery</h2>
+            <div class="Gallery">
+                <a href="img/gamescreen.png"> <img src="img/gamescreen.png" alt=""> </a>
+                <a href="img/gamepic1.png"> <img src="img/gamepic1.png" alt=""> </a>
+                <a href="img/gamepic2.png"> <img src="img/gamepic2.png" alt=""> </a>
+                <a href="img/gamepic3.png"> <img src="img/gamepic3.png" alt=""> </a>
+                <a href="img/gamepic4.png"> <img src="img/gamepic4.png" alt=""> </a>
+                <a href="img/gamepic5.png"> <img src="img/gamepic5.png" alt=""> </a>
+                <a href="img/gamepic6.png"> <img src="img/gamepic6.png" alt=""> </a>
+         </div>
+    </div>
+   
+   </div>
+</body>
+
+<script>
+
+    var lightMode = true;
+
+    function changeSheet() {
+        // make ligthMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turing dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turing light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+</script>
+
+</html>

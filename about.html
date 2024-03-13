@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryson's Website</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" medIA="none" href="css/dark.css">
+</head>
+<body>
+   <div id="content">
+        <div id="banner">
+            <h1>About Me!</h1>
+            <a href="index.html">Main Site</a> |
+            <a href="gameguide.html">Get To School</a> |
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+
+    </div>
+
+    <div id="blogposts">
+        <div class="post">
+            <h2>About Me</h2>
+            <p>Hey and welcome to my website! My name is Bryson and here's a few things you should know about me. 
+            I am currently 16 years old, I like to draw, edit pictures/videos, I have 2 dogs and 1 cat, and I like gaming mostly in my free time.
+            Those are a few small facts about me, make sure to check out the other parts of my website if you're interested! </p>
+            <p>Make sure to check out my other page if you haven't and possibly even try out my RPG Maker game!</p>
+            <img src="img/procreatelogo.png" alt="Drawing App"> 
+            <img src="img/adobelogo.png" alt="Editing App"> 
+         </div>
+        </div>
+   
+
+   </div>
+</body>
+
+<script>
+
+    var lightMode = true;
+
+    function changeSheet() {
+        // make ligthMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turing dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turing light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+</script>
+
+</html>
